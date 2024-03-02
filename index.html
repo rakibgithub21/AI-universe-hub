@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,62 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font icons -->
+    <script src="https://kit.fontawesome.com/5f1b7c5ffc.js" crossorigin="anonymous"></script>
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-        <!-- google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-        
-        <style>
-            .font-style {
-                font-family: "Poppins", sans-serif;
-            }
-        </style>
+    <style>
+        .font-style {
+            font-family: "Work Sans", sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+
+    </header>
+    <main class="container mx-auto">
+        <!-- header section -->
+        <section class="text-center p-12 space-y-2">
+            <h1 class="text-[#111] font-style text-5xl font-semibold">AI Universe Hub</h1>
+            <button class="btn bg-rose-300 btn-outline ring-1">Sort By Date</button>
+        </section>
+
+        <!-- card section -->
+        <section>
+            <div id="div-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20">
+              
+            </div>
+        </section>
+
+
+        <!-- modal -->
+        <!-- You can open the modal using ID.showModal() method -->
+        <button class="btn" onclick="my_modal_4.showModal()">open modal</button>
+        <dialog id="my_modal_4" class="modal">
+            <div class="modal-box w-11/12 max-w-5xl">
+                <div id="modal_container" class="flex justify-between gap-5">
+                    
+                </div>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
 </body>
+
 </html>
